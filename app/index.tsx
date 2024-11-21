@@ -21,7 +21,7 @@ export default function App() {
         />
       }>
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Aora!</ThemedText>
+        <ThemedText type="title" style={styles.boldTitle}>Aora!</ThemedText>
         <HelloWave />
         <StatusBar style='auto' />
         <Link href="/profile" style={{color: 'blue'}}>Go to your Profile</Link>
@@ -38,6 +38,11 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center'
+  },
+
+  boldTitle: {
+    fontWeight: 'bold', // Makes the font more bold
+    fontSize: 30, // Optional: Adjust the font size if needed
   },
 
   reactLogo: {
