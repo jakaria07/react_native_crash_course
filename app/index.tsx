@@ -6,7 +6,6 @@ import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
 import { View } from 'react-native-reanimated/lib/typescript/Animated';
 import { StatusBar } from 'expo-status-bar';
-import { blue } from 'react-native-reanimated/lib/typescript/Colors';
 import { Link } from 'expo-router';
 
 export default function App() {
@@ -24,7 +23,7 @@ export default function App() {
         <ThemedText type="title" style={styles.boldTitle}>Aora!</ThemedText>
         <HelloWave />
         <StatusBar style='auto' />
-        <Link href="/profile" style={{color: 'blue'}}>Go to your Profile</Link>
+        <Link href={"/home"} style={{color: 'blue'}}>Go to your Home</Link>
       </ThemedView>
 
     </ParallaxScrollView>
